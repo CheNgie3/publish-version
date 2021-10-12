@@ -1,0 +1,42 @@
+{
+    "name": "@chengie/publish-version",
+    "version": "0.0.0",
+    "description": "> TODO: description",
+    "author": "xiaocj <1009319945@qq.com>",
+    "license": "ISC",
+    "main": "lib/index.js",
+    "bin": {
+        "publish-tool": "lib/index.js"
+    },
+    "type": "commonjs",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "rm -rf ./lib && webpack",
+        "prepublishOnly": "node ./src/index.js"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.15.8",
+        "@babel/plugin-transform-runtime": "^7.15.8",
+        "@babel/polyfill": "^7.12.1",
+        "@babel/preset-env": "^7.15.8",
+        "babel-preset-es2015-rollup": "^3.0.0",
+        "rollup": "^0.41.6",
+        "rollup-plugin-babel": "^2.7.1",
+        "rollup-plugin-commonjs": "^8.0.2",
+        "rollup-plugin-node-resolve": "^3.0.0",
+        "webpack": "^5.58.1",
+        "webpack-cli": "^4.9.0",
+        "webpack-node-externals": "^3.0.0"
+    },
+    "dependencies": {
+        "enquirer": "^2.3.6",
+        "semver": "^7.3.5"
+    },
+    "files": [
+        "lib"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "http://172.27.24.217/riven/tiler"
+    }
+}
